@@ -12,3 +12,6 @@ This project forecasts solar power generation (solar_mw) in Spain using time-ser
 1. Clone the repo: `git clone https://github.com/sommernesto/GreenGrid-Predictor.git`
 2. Install dependencies: `pip install pandas prophet`
 3. Run `etl_pipeline.ipynb` in a Jupyter environment with the dataset uploaded.
+## Usage
+- Open `etl_pipeline.ipynb` in Jupyter to run the forecasting pipeline.
+- View results in `plots/forecast_plot.png` (forecasted solar_mw) and `plots/components_plot.png` (trend/seasonality breakdown).
