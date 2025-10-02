@@ -7,8 +7,9 @@
 - `spain_renewables_master_2020_2024.csv`: Dataset of solar power output (2020-2024).
 - `plots/forecast_plot.png`: Forecasted solar_mw with historical data.
 - `plots/components_plot.png`: Trend and seasonality breakdown.
-- `reanalysis-era5-single-levels-timeseries-sfcix0i2se8.csv`: Optional weather data for analysis.
+- `weather_era5_spain_2020_2024.csv`: Optional weather data for analysis (ERA5 reanalysis, 2020-2024).
 - `requirements.txt`: Dependencies list (pandas, prophet).
+- `optimization_results.csv`: Resource allocation optimized using SciPy based on the forecast.
 
 ## Setup
 1. Clone the repo: `git clone https://github.com/sommernesto/GreenGrid-Predictor.git`
