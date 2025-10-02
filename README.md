@@ -4,7 +4,7 @@
 
 ## Files
 - `etl_pipeline.ipynb`: Jupyter notebook with Prophet-based forecasting pipeline.
-- `spain_renewables_master_2020_2024 (1).csv`: Dataset of solar power output (2020-2024).
+- `spain_renewables_master_2020_2024.csv`: Dataset of solar power output (2020-2024).
 - `plots/forecast_plot.png`: Forecasted solar_mw with historical data.
 - `plots/components_plot.png`: Trend and seasonality breakdown.
 - `reanalysis-era5-single-levels-timeseries-sfcix0i2se8.csv`: Optional weather data for analysis.
