@@ -19,3 +19,4 @@
 ## Usage
 - Open `etl_pipeline.ipynb` in Jupyter to run the forecasting pipeline.
 - View results in `plots/forecast_plot.png` (forecasted solar_mw) and `plots/components_plot.png` (trend/seasonality breakdown).
+- Check `optimization_results.csv` for resource allocation optimized using SciPy based on the forecast.
