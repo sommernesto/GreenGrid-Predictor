@@ -13,7 +13,8 @@
 ## Setup
 1. Clone the repo: `git clone https://github.com/sommernesto/GreenGrid-Predictor.git`
 2. Install dependencies: `pip install pandas prophet`
-3. Run `etl_pipeline.ipynb` in a Jupyter environment with the dataset uploaded.
+3. Checkout the default branch: `git checkout develop`
+4. Run `etl_pipeline.ipynb` in a Jupyter environment with the dataset uploaded.
 
 ## Usage
 - Open `etl_pipeline.ipynb` in Jupyter to run the forecasting pipeline.
