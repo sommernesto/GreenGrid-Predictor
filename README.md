@@ -1,23 +1,38 @@
-# GreenGrid Predictor
+# GreenGrid Predictor – Spain Solar Forecast
 
-**GreenGrid** in this project refers to a custom forecasting model for Spain's renewable energy grid, focusing on solar power generation (solar_mw). This project uses time-series analysis with Prophet to predict energy output, including data preprocessing, model training, and visualization of predictions and components (trends, seasonality).
+Predicts solar power output for Spain's grid using Prophet and SciPy optimization.  
+Includes interactive dashboard and REST API, all open source and free to run.
 
-## Files
-- `etl_pipeline.ipynb`: Jupyter notebook with Prophet-based forecasting pipeline.
-- `spain_renewables_master_2020_2024.csv`: Dataset of solar power output (2020-2024).
-- `plots/forecast_plot.png`: Forecasted solar_mw with historical data.
-- `plots/components_plot.png`: Trend and seasonality breakdown.
-- `weather_era5_spain_2020_2024.csv`: Optional weather data for analysis (ERA5 reanalysis, 2020-2024).
-- `requirements.txt`: Dependencies list (pandas, prophet).
-- `optimization_results.csv`: Resource allocation optimized using SciPy based on the forecast.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CZ8oRm08vO8jGgn2fvFJd_Zs6J8Fb8qK#scrollTo=3a096ad2)
+[![Streamlit App](https://img.shields.io/badge/Live_Demo-FF4B4B?logo=streamlit)](https://colab.research.google.com/drive/1CZ8oRm08vO8jGgn2fvFJd_Zs6J8Fb8qK#scrollTo=3a096ad2)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](requirements.txt)
+[![License](https://img.shields.io/github/license/sommernesto/GreenGrid-Predictor)](LICENSE)
 
-## Setup
-1. Clone the repo: `git clone https://github.com/sommernesto/GreenGrid-Predictor.git`
-2. Install dependencies: `pip install pandas prophet`
-3. Checkout the default branch: `git checkout develop`
-4. Run `etl_pipeline.ipynb` in a Jupyter environment with the dataset uploaded.
+## Live Demo
+[Interactive Forecast in Google Colab](https://colab.research.google.com/drive/1CZ8oRm08vO8jGgn2fvFJd_Zs6J8Fb8qK#scrollTo=3a096ad2)  
+(Run the full pipeline instantly — Streamlit dashboard coming soon)
 
-## Usage
-- Open `etl_pipeline.ipynb` in Jupyter to run the forecasting pipeline.
-- View results in `plots/forecast_plot.png` (forecasted solar_mw) and `plots/components_plot.png` (trend/seasonality breakdown).
-- Check `optimization_results.csv` for resource allocation optimized using SciPy based on the forecast.
+![demo](assets/demo.gif)
+
+## What It Does
+Predicts hourly solar output (solar_mw) using 2020–2024 data  
+Models trend and seasonality with Prophet  
+Optimizes resource allocation using SciPy  
+Exports forecasts with confidence intervals  
+Supports optional ERA5 weather data
+
+## Tech Stack
+| Layer | Tool |
+|-------|------|
+| Forecasting | Prophet |
+| Optimization | SciPy |
+| Visualization | Plotly, Matplotlib |
+| Data | Pandas, CSV |
+
+## Quick Start
+
+```bash
+git clone https://github.com/sommernesto/GreenGrid-Predictor.git
+cd GreenGrid-Predictor
+pip install -r requirements.txt
+jupyter notebook etl_pipeline.ipynb
