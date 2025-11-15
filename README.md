@@ -28,10 +28,10 @@ This project predicts `solar_mw` using **2020–2024 hourly data** (~44k rows).
 ## Visual Proof
 
 ### Full Time Series (2020–2024)
-![Full Solar Time Series](plots/01_full_timeseries.png)
+![Full Solar Time Series](https://github.com/sommernesto/GreenGrid-Predictor/raw/main/plots/01_full_timeseries.png)
 
 ### 7-Day Forecast vs Actual (Dec 2024)
-![XGBoost 7-Day Forecast](plots/02_xgboost_forecast_7days.png)
+![XGBoost 7-Day Forecast](https://github.com/sommernesto/GreenGrid-Predictor/raw/main/plots/02_xgboost_forecast_7days.png)
 
 ---
 
