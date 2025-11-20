@@ -49,3 +49,7 @@ git clone https://github.com/sommernesto/GreenGrid-Predictor.git
 cd GreenGrid-Predictor
 pip install -r requirements.txt
 jupyter notebook notebooks/GreenGridFinalAnalysis.ipynb
+> Building production-ready forecasting models for solar power and financial markets — from raw data to deployed solutions.
+
+---
+MIT License | Data: ENTSO-E (public domain) | Weather: Open-Meteo (CC-BY 4.0)
